@@ -15,7 +15,8 @@ const Game = () => {
             <div className="gap-2 grid grid-cols-3">
                 {Array.from({ length: 9 }).map((_, index) => (
                     <Box key={index} handleClick={onHandleClick} id={index} />
-                ))}
+       
+       ))}
             </div>
             <p className='text-2xl'>{WinningInput}</p>
             <button onClick={reset} className='bg-blue-400 hover:bg-blue-700 mt-5 px-4 py-2 rounded-3xl text-white cursor-pointer'>{WinningInput ? 'Play Again' : 'Reset'}</button>
